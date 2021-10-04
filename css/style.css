@@ -1,0 +1,865 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #05A3B3;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 14px;
+  min-height: 100%;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  width: 100%;
+  height: 38px;
+  background: #05A3B3;
+  display: block;
+  position: relative;
+  z-index: 50;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 756px;
+  background: url(./../img/banner-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  top: -20px;
+  right: 18%;
+  z-index: 1;
+}
+
+.banner .banner-content {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  padding-left: 75px;
+  padding-right: 75px;
+  position: relative;
+  z-index: 50;
+}
+
+.banner .banner-content .logo {
+  width: 90%;
+  max-width: 656px;
+  padding-bottom: 15px;
+  margin: auto;
+}
+
+.banner .banner-content .logo img {
+  width: 100%;
+}
+
+.banner .banner-content .black-text {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 59px;
+  line-height: 72px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 40px;
+}
+
+.banner .banner-content .blue-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #61C3D9;
+  margin: auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+.whatSreda {
+  padding-top: 90px;
+  padding-bottom: 40px;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.whatSreda .bg-circle1 {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  background: url(./../img/whatSreda-bg1.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  bottom: 0px;
+  left: 0px;
+  width: 575px;
+  height: 740px;
+}
+
+.whatSreda .bg-circle2 {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  display: block;
+  background: url(./../img/whatSreda-bg2.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  bottom: 0px;
+  left: 0px;
+  width: 578px;
+  height: 639px;
+}
+
+.whatSreda .bg-rhomb1 {
+  position: absolute;
+  width: 191px;
+  height: 192px;
+  top: 90px;
+  right: 50px;
+  background: url(./../img/blue-rhomb.svg);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 55;
+}
+
+.whatSreda .bg-rhomb2 {
+  position: absolute;
+  width: 191px;
+  height: 192px;
+  bottom: 94px;
+  right: -50px;
+  background: url(./../img/blue-rhomb.svg);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 55;
+}
+
+.whatSreda .whatSreda-content {
+  position: relative;
+  padding-left: 70px;
+  padding-right: 70px;
+  z-index: 50;
+}
+
+.whatSreda .whatSreda-content .whatSreda-header {
+  position: relative;
+  margin-left: 400px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 78px;
+  text-transform: uppercase;
+  color: #000000;
+  display: inline-block;
+}
+
+.whatSreda .whatSreda-content .whatSreda-header::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 225px;
+  height: 15px;
+  background: url(./../img/whtaSreda-header-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  top: -20px;
+  left: -25px;
+}
+
+.whatSreda .whatSreda-content .whatSreda-header::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 225px;
+  height: 15px;
+  background: url(./../img/whtaSreda-header-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  bottom: -20px;
+  right: -35px;
+}
+
+.whatSreda .whatSreda-content .whatSreda-block {
+  margin-top: 40px;
+  border: 4px solid #61C3D9;
+  border-radius: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  min-height: 330px;
+}
+
+.whatSreda .whatSreda-content .whatSreda-block::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  top: -30px;
+  left: 45px;
+  background: -webkit-linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+  background: -o-linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+  background: linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+}
+
+.whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText {
+  width: 400px;
+  position: relative;
+}
+
+.whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  bottom: 0px;
+  left: 15px;
+  width: 392px;
+  height: 499px;
+  background: url(./../img/whatSreda-phone.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  display: block;
+}
+
+.whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul {
+  position: absolute;
+  width: 169px;
+  height: 330px;
+  background: #403F3F;
+  bottom: 146px;
+  left: 168px;
+  padding: 33px 15px;
+}
+
+.whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul .logo {
+  padding-bottom: 46px;
+  width: 135px;
+  max-width: 100%;
+}
+
+.whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul .logo img {
+  width: 100%;
+}
+
+.whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul .item {
+  padding-right: 5px;
+  padding-left: 5px;
+  position: relative;
+  padding-bottom: 20px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul .item::before {
+  content: "";
+  margin-right: 7px;
+  min-width: 15px;
+  width: 15px;
+  height: 15px;
+  background: -webkit-linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+  background: -o-linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+  background: linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+  border-radius: 3px;
+  display: block;
+}
+
+.whatSreda .whatSreda-content .whatSreda-block .whatSreda-text {
+  width: calc(100% - 400px);
+  padding-top: 85px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+  font-family: "Montserrat";
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.whatSreda .whatSreda-content .whatSreda-block .whatSreda-text .bold {
+  font-weight: bold;
+}
+
+.whatSreda .whatSreda-content .btns-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding-top: 90px;
+}
+
+.whatSreda .whatSreda-content .btns-cont .btn-blue {
+  background: #05A3B3;
+  border-radius: 20px;
+  padding: 18px 80px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  width: 50%;
+  max-width: 540px;
+  white-space: normal;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1350px) {
+  .whatSreda .bg-rhomb1 {
+    width: 150px;
+    height: 150px;
+    top: 90px;
+    right: 20px;
+  }
+  .whatSreda .bg-rhomb2 {
+    width: 150px;
+    height: 150px;
+    bottom: 94px;
+    right: -50px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-header {
+    font-size: 52px;
+    line-height: 64px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-text {
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner::before {
+    height: 30px;
+  }
+  .banner::after {
+    width: 756px;
+    height: 756px;
+    top: -30px;
+    right: 13%;
+  }
+  .whatSreda .whatSreda-content .whatSreda-header {
+    font-size: 46px;
+    line-height: 52px;
+  }
+  .whatSreda .whatSreda-content .btns-cont .btn-blue {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 15px 40px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .whatSreda .bg-rhomb1 {
+    width: 120px;
+    height: 120px;
+    top: 90px;
+    right: 0px;
+  }
+  .whatSreda .bg-rhomb2 {
+    width: 120px;
+    height: 120px;
+    bottom: 94px;
+    right: -50px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-header {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner::after {
+    width: 600px;
+    height: 600px;
+    top: -20px;
+    right: 15%;
+  }
+  .banner .banner-content {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .banner .banner-content .logo {
+    max-width: 500px;
+  }
+  .banner .banner-content .black-text {
+    font-size: 42px;
+    line-height: 52px;
+    padding-bottom: 30px;
+    max-width: 900px;
+  }
+  .banner .banner-content .blue-text {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 600px;
+  }
+  .whatSreda {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .whatSreda .bg-circle1 {
+    width: 500px;
+    height: 640px;
+  }
+  .whatSreda .bg-circle2 {
+    width: 500px;
+    height: 580px;
+  }
+  .whatSreda .bg-rhomb1 {
+    width: 100px;
+    height: 100px;
+    top: 90px;
+    right: -10px;
+  }
+  .whatSreda .bg-rhomb2 {
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    right: -50px;
+  }
+  .whatSreda .whatSreda-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-header {
+    margin-left: 300px;
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-header::before {
+    width: 180px;
+    height: 13px;
+    top: -20px;
+    left: -25px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-header::after {
+    width: 180px;
+    height: 13px;
+    bottom: -20px;
+    right: -35px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block {
+    margin-top: 30px;
+    min-height: 300px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block::before {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    top: -30px;
+    left: 45px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText {
+    width: 300px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText::before {
+    bottom: 0px;
+    left: 15px;
+    width: 300px;
+    height: 450px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul {
+    width: 130px;
+    height: 260px;
+    bottom: 106px;
+    left: 130px;
+    padding: 25px 10px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul .logo {
+    padding-bottom: 46px;
+    width: 135px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul .item {
+    padding-bottom: 15px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul .item::before {
+    margin-right: 5px;
+    min-width: 10px;
+    width: 10px;
+    height: 10px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-text {
+    width: calc(100% - 300px);
+    padding-top: 55px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-text br {
+    display: none;
+  }
+  .whatSreda .whatSreda-content .btns-cont {
+    padding-top: 80px;
+  }
+  .whatSreda .whatSreda-content .btns-cont .btn-blue {
+    padding: 15px 40px;
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner::before {
+    height: 20px;
+  }
+  .banner::after {
+    width: 300px;
+    height: 300px;
+    top: 0px;
+    right: 25%;
+  }
+  .banner .banner-content {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .banner .banner-content .logo {
+    max-width: 250px;
+    width: 60%;
+  }
+  .banner .banner-content .black-text {
+    max-width: 1200px;
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 25px;
+    max-width: 500px;
+  }
+  .banner .banner-content .blue-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .whatSreda {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .whatSreda .bg-circle1 {
+    width: 350px;
+    height: 600px;
+  }
+  .whatSreda .bg-circle2 {
+    width: 350px;
+    height: 700px;
+  }
+  .whatSreda .bg-rhomb1 {
+    width: 100px;
+    height: 100px;
+    top: 90px;
+    right: -50px;
+  }
+  .whatSreda .bg-rhomb2 {
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    right: -70px;
+  }
+  .whatSreda .whatSreda-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-header {
+    margin-left: 200px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-header::before {
+    width: 100px;
+    height: 10px;
+    top: -10px;
+    left: -15px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-header::after {
+    width: 100px;
+    height: 10px;
+    bottom: -10px;
+    right: -25px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block {
+    min-height: 200px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block::before {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    top: -20px;
+    left: 30px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText {
+    width: 200px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText::before {
+    width: 200px;
+    height: 260px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul {
+    width: 85px;
+    height: 180px;
+    bottom: 70px;
+    left: 93px;
+    padding: 25px 5px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul .logo {
+    padding-bottom: 30px;
+    width: 80%;
+    margin: auto;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul .item {
+    padding-bottom: 10px;
+    font-size: 8px;
+    line-height: 12px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText ul .item::before {
+    margin-right: 3px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-text {
+    width: calc(100% - 200px);
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .whatSreda .whatSreda-content .btns-cont .btn-blue {
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner::after {
+    width: 300px;
+    height: 300px;
+    top: 0px;
+    right: 20%;
+  }
+  .whatSreda .whatSreda-content {
+    text-align: center;
+  }
+  .whatSreda .whatSreda-content .whatSreda-header {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block {
+    min-height: 270px;
+    text-align: left;
+  }
+  .whatSreda .whatSreda-content .btns-cont {
+    padding-top: 30px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .whatSreda .whatSreda-content .btns-cont .btn-blue {
+    min-height: 65px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner::after {
+    width: 300px;
+    height: 300px;
+    top: 0px;
+    right: 13%;
+  }
+  .banner .banner-content {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .banner .banner-content .logo {
+    max-width: 250px;
+    width: 60%;
+  }
+  .banner .banner-content .black-text {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 300px;
+  }
+  .banner .banner-content .blue-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .whatSreda .whatSreda-content .whatSreda-header {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-phoneText {
+    height: 250px;
+  }
+  .whatSreda .whatSreda-content .whatSreda-block .whatSreda-text {
+    width: 100%;
+    padding: 30px 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
