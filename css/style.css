@@ -1621,6 +1621,114 @@ body {
   display: block;
 }
 
+.case {
+  background: #403F3F;
+  position: relative;
+}
+
+.case::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 652px;
+  background: url(./../images/case-bg.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  z-index: 5;
+}
+
+.case .case-img {
+  width: 1000px;
+  position: absolute;
+  left: 0px;
+  bottom: 90px;
+  z-index: 25;
+  max-width: 70%;
+}
+
+.case .case-img::after {
+  content: "";
+  position: absolute;
+  left: 25PX;
+  bottom: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+  background: -o-linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+  background: linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+  z-index: 30;
+}
+
+.case .case-img::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+  background: -o-linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+  background: linear-gradient(45deg, #00C3DA 5.24%, #05A3B3 86.37%);
+  z-index: 30;
+}
+
+.case .case-img img {
+  max-width: 100%;
+}
+
+.case .case-content {
+  padding-top: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 50;
+}
+
+.case .case-header {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 78px;
+  text-transform: uppercase;
+  color: #CAE1F2;
+  text-align: right;
+  max-width: 85%;
+}
+
+.case .case-text-block {
+  font-family: "Montserrat";
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  width: 580px;
+  max-width: 40%;
+  padding-top: 170px;
+}
+
+.case .bold {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1350px) {
   .whatSreda .bg-rhomb1 {
     width: 150px;
@@ -1810,6 +1918,15 @@ body {
   .unique .bottom-row .btn-col .btn-navy {
     font-size: 12px;
     line-height: 16px;
+  }
+  .case .case-text-block {
+    font-size: 28px;
+    line-height: 38px;
+    padding-top: 150px;
+  }
+  .case .case-img {
+    width: 800px;
+    max-width: 70%;
   }
 }
 
@@ -2045,6 +2162,33 @@ body {
     font-size: 22px;
     line-height: 28px;
     padding-right: 20px;
+  }
+  .case .case-header {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .case .case-text-block {
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 130px;
+  }
+  .case .case-img {
+    width: 700px;
+    max-width: 60%;
+  }
+  .case .case-img::after {
+    left: 15px;
+    bottom: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .case .case-img::before {
+    top: 8%;
+    left: 20%;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
   }
 }
 
@@ -2421,6 +2565,26 @@ body {
     font-size: 12px;
     line-height: 16px;
     padding: 15px;
+  }
+  .case::before {
+    max-width: 60%;
+  }
+  .case .case-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .case .case-header {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .case .case-text-block {
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 100px;
+  }
+  .case .case-img {
+    width: 500px;
+    max-width: 50%;
   }
 }
 
@@ -2949,6 +3113,41 @@ body {
     line-height: 16px;
     padding: 15px;
   }
+  .case::before {
+    top: 20%;
+  }
+  .case .case-content {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+  .case .case-header {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .case .case-text-block {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 80px;
+  }
+  .case .case-img {
+    bottom: 20px;
+  }
+  .case .case-img::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    left: 25%;
+    top: 10%;
+  }
+  .case .case-img::after {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    bottom: -10px;
+    left: 10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -3088,6 +3287,19 @@ body {
     width: 200px;
     min-width: 200px;
   }
+  .case::before {
+    top: 40%;
+    left: -80px;
+  }
+  .case .case-header {
+    max-width: none;
+  }
+  .case .case-text-block {
+    padding-top: 50px;
+  }
+  .case .case-img::before, .case .case-img::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -3179,6 +3391,21 @@ body {
   .unique .bottom-row .btn-col {
     width: 100%;
     min-width: 100%;
+  }
+  .case::before {
+    top: 40%;
+    left: -50px;
+  }
+  .case .case-header {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .case .case-text-block {
+    padding-top: 40px;
+    font-size: 12px;
+    line-height: 16px;
+    width: 50%;
+    max-width: 50%;
   }
 }
 
@@ -3289,6 +3516,15 @@ body {
     font-size: 14px;
     line-height: 18px;
   }
+  .case .case-header {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .case .case-text-block {
+    padding-top: 20px;
+    width: 65%;
+    max-width: 65%;
+  }
   .steps .steps-content,
   .involved,
   .slider .btns-cont,
@@ -3296,7 +3532,8 @@ body {
   .twoBlocks,
   .whatSreda .whatSreda-content,
   .banner .banner-content,
-  .unique .unique-content {
+  .unique .unique-content,
+  .case .case-content {
     padding-left: 20px;
     padding-right: 20px;
   }
