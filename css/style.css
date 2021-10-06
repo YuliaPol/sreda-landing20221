@@ -411,6 +411,11 @@ body {
 }
 
 .whatSreda .whatSreda-content .btns-cont .btn-blue {
+  width: 50%;
+  max-width: 540px;
+}
+
+.btn-blue {
   background: #05A3B3;
   border-radius: 20px;
   padding: 18px 80px;
@@ -421,8 +426,6 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   text-align: center;
-  width: 50%;
-  max-width: 540px;
   white-space: normal;
   text-decoration: none;
   outline: none;
@@ -801,39 +804,8 @@ body {
 }
 
 .slider .btns-cont .btn-blue {
-  background: #05A3B3;
-  border-radius: 20px;
-  padding: 18px 80px;
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  text-align: center;
   width: 50%;
   max-width: 540px;
-  white-space: normal;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .steps {
@@ -1093,22 +1065,11 @@ body {
 }
 
 .steps .steps-content .bottom-row .btn-wrap .btn-blue {
-  background: #05A3B3;
-  border-radius: 20px;
-  padding: 10px 25px;
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
   width: 390px;
   max-width: 100%;
-  cursor: pointer;
-  display: block;
-  outline: none;
-  text-decoration: none;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 8px 20px;
 }
 
 .steps .steps-content .bottom-row .text-col {
@@ -1267,15 +1228,17 @@ body {
     padding-left: 170px;
   }
   .steps .steps-content .bottom-row .btn-wrap .btn-blue {
-    padding: 10px 25px;
-    font-size: 18px;
-    line-height: 22px;
     width: 350px;
   }
   .steps .steps-content .bottom-row .text-col {
     font-size: 22px;
     line-height: 28px;
     max-width: 730px;
+  }
+  .btn-blue {
+    padding: 10px 25px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -1292,11 +1255,6 @@ body {
   .whatSreda .whatSreda-content .whatSreda-header {
     font-size: 46px;
     line-height: 52px;
-  }
-  .whatSreda .whatSreda-content .btns-cont .btn-blue {
-    font-size: 20px;
-    line-height: 28px;
-    padding: 15px 40px;
   }
   .twoBlocks .twoBlocks-content .block-item {
     padding: 30px;
@@ -1368,11 +1326,6 @@ body {
   .slider .slider-block .slider-item .slider-row .img-col.img-35 {
     width: 50%;
     min-width: 50%;
-  }
-  .slider .btns-cont .btn-blue {
-    font-size: 20px;
-    line-height: 28px;
-    padding: 15px 40px;
   }
   .steps .bg-rhombs {
     width: 280px;
@@ -1452,15 +1405,17 @@ body {
     padding-left: 100px;
   }
   .steps .steps-content .bottom-row .btn-wrap .btn-blue {
-    padding: 10px 25px;
-    font-size: 16px;
-    line-height: 24px;
     width: 350px;
   }
   .steps .steps-content .bottom-row .text-col {
     font-size: 18px;
     line-height: 24px;
     max-width: 730px;
+  }
+  .btn-blue {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 15px 40px;
   }
 }
 
@@ -1616,9 +1571,6 @@ body {
     padding-top: 80px;
   }
   .whatSreda .whatSreda-content .btns-cont .btn-blue {
-    padding: 15px 40px;
-    font-size: 14px;
-    line-height: 18px;
     max-width: 300px;
   }
   .twoBlocks {
@@ -1670,9 +1622,6 @@ body {
     padding-right: 50px;
   }
   .slider .btns-cont .btn-blue {
-    padding: 15px 40px;
-    font-size: 14px;
-    line-height: 18px;
     max-width: 300px;
   }
   .steps .bg-rhombs {
@@ -1755,15 +1704,19 @@ body {
     padding-left: 60px;
   }
   .steps .steps-content .bottom-row .btn-wrap .btn-blue {
-    padding: 10px 20px;
-    font-size: 14px;
-    line-height: 22px;
     width: 300px;
+    font-size: 14px;
+    line-height: 16px;
   }
   .steps .steps-content .bottom-row .text-col {
     font-size: 14px;
     line-height: 18px;
     max-width: 730px;
+  }
+  .btn-blue {
+    padding: 15px 40px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -1903,11 +1856,6 @@ body {
     font-size: 14px;
     line-height: 18px;
   }
-  .whatSreda .whatSreda-content .btns-cont .btn-blue {
-    padding: 15px 20px;
-    font-size: 14px;
-    line-height: 18px;
-  }
   .twoBlocks {
     padding: 50px 30px;
   }
@@ -1962,11 +1910,6 @@ body {
     margin: 0px;
     padding-left: 30px;
     padding-right: 30px;
-  }
-  .slider .btns-cont .btn-blue {
-    padding: 15px 20px;
-    font-size: 14px;
-    line-height: 18px;
   }
   .steps .bg-rhombs {
     width: 150px;
@@ -2047,15 +1990,17 @@ body {
     padding-left: 0px;
   }
   .steps .steps-content .bottom-row .btn-wrap .btn-blue {
-    padding: 10px 20px;
-    font-size: 14px;
-    line-height: 22px;
     width: 250px;
   }
   .steps .steps-content .bottom-row .text-col {
     font-size: 14px;
     line-height: 18px;
     max-width: 730px;
+  }
+  .btn-blue {
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -2084,7 +2029,6 @@ body {
             flex-wrap: wrap;
   }
   .whatSreda .whatSreda-content .btns-cont .btn-blue {
-    min-height: 65px;
     margin-bottom: 15px;
     width: 100%;
     max-width: 400px;
@@ -2129,7 +2073,6 @@ body {
             flex-wrap: wrap;
   }
   .slider .btns-cont .btn-blue {
-    min-height: 65px;
     margin-bottom: 15px;
     width: 100%;
     max-width: 400px;
@@ -2159,6 +2102,10 @@ body {
   .steps .steps-content .bottom-row .text-col {
     padding-bottom: 20px;
     text-align: center;
+  }
+  .btn-blue {
+    min-height: 65px;
+    width: 100%;
   }
 }
 
@@ -2273,7 +2220,7 @@ body {
     font-size: 10px;
     line-height: 14px;
   }
-  .steps .steps-content .bottom-row .btn-wrap .btn-blue {
+  .btn-blue {
     font-size: 12px;
     line-height: 16px;
   }

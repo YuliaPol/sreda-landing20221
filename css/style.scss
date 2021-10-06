@@ -332,32 +332,34 @@ body {
             justify-content: space-around;
             padding-top: 90px;
             .btn-blue {
-                background: #05A3B3;
-                border-radius: 20px;
-                padding: 18px 80px;
-                font-family: $fontPage;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 29px;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                text-align: center;
                 width: 50%;
                 max-width: 540px;
-                white-space: normal;
-                text-decoration: none;
-                outline: none;
-                border: none;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                margin-right: 10px;
-                margin-left: 10px;
             }
         }
     }
+}
+.btn-blue {
+    background: #05A3B3;
+    border-radius: 20px;
+    padding: 18px 80px;
+    font-family: $fontPage;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: normal;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .twoBlocks {
     padding: 80px 60px;
@@ -594,29 +596,8 @@ body {
         padding-left: 70px;
         padding-right: 70px;
         .btn-blue {
-            background: #05A3B3;
-            border-radius: 20px;
-            padding: 18px 80px;
-            font-family: $fontPage;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 29px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            text-align: center;
             width: 50%;
             max-width: 540px;
-            white-space: normal;
-            text-decoration: none;
-            outline: none;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            margin-right: 10px;
-            margin-left: 10px;
         }
     }
 }
@@ -810,22 +791,11 @@ body {
                 padding-right: 30px;
                 max-width: 40%;
                 .btn-blue {
-                    background: #05A3B3;
-                    border-radius: 20px;
-                    padding: 10px 25px;
-                    font-family: $fontPage;
-                    font-weight: bold;
-                    font-size: 18px;
-                    line-height: 22px;
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: #FFFFFF;
                     width: 390px;
                     max-width: 100%;
-                    cursor: pointer;
-                    display: block;
-                    outline: none;
-                    text-decoration: none;
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding: 8px 20px;
                 }
             }
             .text-col {
@@ -1012,9 +982,6 @@ body {
                 padding-left: 170px;
                 .btn-wrap {
                     .btn-blue {
-                        padding: 10px 25px;
-                        font-size: 18px;
-                        line-height: 22px;
                         width: 350px;
                     }
                 }
@@ -1025,6 +992,11 @@ body {
                 }
             }
         }
+    }
+    .btn-blue {
+        padding: 10px 25px;
+        font-size: 18px;
+        line-height: 22px;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -1044,13 +1016,6 @@ body {
             .whatSreda-header {
                 font-size: 46px;
                 line-height: 52px;
-            }
-            .btns-cont {
-                .btn-blue {
-                    font-size: 20px;
-                    line-height: 28px;
-                    padding: 15px 40px;
-                }
             }
         }
     }
@@ -1134,13 +1099,6 @@ body {
                         }
                     }
                 }
-            }
-        }
-        .btns-cont {
-            .btn-blue {
-                font-size: 20px;
-                line-height: 28px;
-                padding: 15px 40px;
             }
         }
     }
@@ -1228,9 +1186,6 @@ body {
                 padding-left: 100px;
                 .btn-wrap {
                     .btn-blue {
-                        padding: 10px 25px;
-                        font-size: 16px;
-                        line-height: 24px;
                         width: 350px;
                     }
                 }
@@ -1241,6 +1196,11 @@ body {
                 }
             }
         }
+    }
+    .btn-blue {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 15px 40px;
     }
 }
 @media screen and (max-width: 1100px) {
@@ -1399,9 +1359,6 @@ body {
             .btns-cont {
                 padding-top: 80px;
                 .btn-blue {
-                    padding: 15px 40px;
-                    font-size: 14px;
-                    line-height: 18px;
                     max-width: 300px;
                 }
             }
@@ -1462,9 +1419,6 @@ body {
             padding-left: 50px;
             padding-right: 50px;
             .btn-blue {
-                padding: 15px 40px;
-                font-size: 14px;
-                line-height: 18px;
                 max-width: 300px;
             }
         }
@@ -1555,10 +1509,9 @@ body {
                 padding-left: 60px;
                 .btn-wrap {
                     .btn-blue {
-                        padding: 10px 20px;
-                        font-size: 14px;
-                        line-height: 22px;
                         width: 300px;
+                        font-size: 14px;
+                        line-height: 16px;
                     }
                 }
                 .text-col {
@@ -1568,6 +1521,11 @@ body {
                 }
             }
         }
+    }
+    .btn-blue {
+        padding: 15px 40px;
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 @media screen and (max-width: 900px) {
@@ -1713,13 +1671,6 @@ body {
                     line-height: 18px;
                 }
             }
-            .btns-cont {
-                .btn-blue {
-                    padding: 15px 20px;
-                    font-size: 14px;
-                    line-height: 18px;
-                }
-            }
         }
     }
     .twoBlocks {
@@ -1786,11 +1737,6 @@ body {
             margin: 0px;
             padding-left: 30px;
             padding-right: 30px;
-            .btn-blue {
-                padding: 15px 20px;
-                font-size: 14px;
-                line-height: 18px;
-            }
         }
     }
     .steps {
@@ -1878,9 +1824,6 @@ body {
                 padding-left: 0px;
                 .btn-wrap {
                     .btn-blue {
-                        padding: 10px 20px;
-                        font-size: 14px;
-                        line-height: 22px;
                         width: 250px;
                     }
                 }
@@ -1891,6 +1834,11 @@ body {
                 }
             }
         }
+    }
+    .btn-blue {
+        padding: 15px 20px;
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 @media screen and (max-width: 600px) {
@@ -1917,7 +1865,6 @@ body {
                 padding-top: 30px;
                 flex-wrap: wrap;
                 .btn-blue {
-                    min-height: 65px;
                     margin-bottom: 15px;
                     width: 100%;
                     max-width: 400px;
@@ -1963,7 +1910,6 @@ body {
         .btns-cont {
             flex-wrap: wrap;
             .btn-blue {
-                min-height: 65px;
                 margin-bottom: 15px;
                 width: 100%;
                 max-width: 400px;
@@ -2007,6 +1953,10 @@ body {
                 }
             }
         }
+    }
+    .btn-blue {
+        min-height: 65px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 500px) {
@@ -2145,13 +2095,11 @@ body {
                     font-size: 10px;
                     line-height: 14px;
                 }
-                .btn-wrap {
-                    .btn-blue {
-                        font-size: 12px;
-                        line-height: 16px;
-                    }
-                }
             }
         }
+    }
+    .btn-blue {
+        font-size: 12px;
+        line-height: 16px;
     }
 }
