@@ -1729,6 +1729,194 @@ body {
   font-weight: bold;
 }
 
+.how-it-was {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.how-it-was::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 669px;
+  height: 564px;
+  background: url(./../images/how-ite-was-bg.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  z-index: 1;
+}
+
+.how-it-was .section-content {
+  padding-left: 70px;
+  padding-right: 70px;
+  position: relative;
+  z-index: 50;
+}
+
+.how-it-was .how-it-was-header {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 78px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.how-it-was .flex-row {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.how-it-was .flex-row .item-wrap {
+  width: 33.3%;
+  padding-right: 20px;
+}
+
+.how-it-was .flex-row .item-wrap .item-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.how-it-was .flex-row .item-wrap .item-header.align-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how-it-was .flex-row .item-wrap .item-header .picture {
+  width: 30%;
+  min-width: 30%;
+}
+
+.how-it-was .flex-row .item-wrap .item-header .picture img {
+  width: 100%;
+}
+
+.how-it-was .flex-row .item-wrap .item-header .picture .header {
+  padding-left: 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.how-it-was .flex-row .item-wrap .item-header .header {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-left: 10px;
+}
+
+.how-it-was .flex-row .item-wrap .item-text {
+  padding-top: 35px;
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.how-it-was .flex-row .item-wrap .item-text ul {
+  list-style: '•';
+}
+
+.how-it-was .flex-row .item-wrap .item-text ul li {
+  padding-left: 10px;
+}
+
+.how-it-was .btn-wrap {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.how-it-was .btn-wrap::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 377px;
+  height: 11px;
+  background: url(./../images/blue-dots.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.how-it-was .btn-wrap .btn-blue {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 530px;
+  width: 100%;
+  padding: 30px 90px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background: #05A3B3;
+  border-radius: 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+}
+
 @media screen and (max-width: 1350px) {
   .whatSreda .bg-rhomb1 {
     width: 150px;
@@ -1927,6 +2115,10 @@ body {
   .case .case-img {
     width: 800px;
     max-width: 70%;
+  }
+  .how-it-was .flex-row .item-wrap .item-header .header {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -2189,6 +2381,30 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 10px;
+  }
+  .how-it-was::before {
+    max-width: 50%;
+  }
+  .how-it-was .how-it-was-header {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .how-it-was .flex-row .item-wrap .item-header .header {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .how-it-was .flex-row .item-wrap .item-header .picture {
+    width: 20%;
+    min-width: 20%;
+  }
+  .how-it-was .flex-row .item-wrap .item-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .how-it-was .btn-wrap .btn-blue {
+    max-width: 450px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
@@ -2586,6 +2802,35 @@ body {
     width: 500px;
     max-width: 50%;
   }
+  .how-it-was .how-it-was-header {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .how-it-was .section-content {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .how-it-was .flex-row .item-wrap .item-header .header {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .how-it-was .flex-row .item-wrap .item-header .picture {
+    width: 20%;
+    min-width: 20%;
+  }
+  .how-it-was .flex-row .item-wrap .item-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .how-it-was .btn-wrap::before {
+    width: 200px;
+  }
+  .how-it-was .btn-wrap .btn-blue {
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px 30px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -2608,6 +2853,18 @@ body {
   .unique .unique-list .unique-item .text-block {
     font-size: 12px;
     line-height: 16px;
+  }
+  .how-it-was .flex-row .item-wrap .item-header .header {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .how-it-was .flex-row .item-wrap .item-header .picture {
+    width: 15%;
+    min-width: 15%;
+  }
+  .how-it-was .flex-row .item-wrap .item-text {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -3148,6 +3405,39 @@ body {
     bottom: -10px;
     left: 10px;
   }
+  .how-it-was .section-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .how-it-was .how-it-was-header {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .how-it-was .flex-row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .how-it-was .flex-row .item-wrap {
+    width: 50%;
+    padding-bottom: 30px;
+  }
+  .how-it-was .flex-row .item-wrap .item-text {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .how-it-was .btn-wrap {
+    padding-top: 30px;
+  }
+  .how-it-was .btn-wrap::before {
+    top: 10px;
+  }
+  .how-it-was .btn-wrap .btn-blue {
+    max-width: 350px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -3300,6 +3590,14 @@ body {
   .case .case-img::before, .case .case-img::after {
     display: none;
   }
+  .how-it-was .flex-row .item-wrap {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .how-it-was .btn-wrap::before {
+    top: 0px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -3406,6 +3704,15 @@ body {
     line-height: 16px;
     width: 50%;
     max-width: 50%;
+  }
+  .how-it-was .how-it-was-header {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .how-it-was .btn-wrap .btn-blue {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -3525,6 +3832,10 @@ body {
     width: 65%;
     max-width: 65%;
   }
+  .how-it-was .how-it-was-header {
+    font-size: 18px;
+    line-height: 24px;
+  }
   .steps .steps-content,
   .involved,
   .slider .btns-cont,
@@ -3533,7 +3844,8 @@ body {
   .whatSreda .whatSreda-content,
   .banner .banner-content,
   .unique .unique-content,
-  .case .case-content {
+  .case .case-content,
+  .how-it-was .section-content {
     padding-left: 20px;
     padding-right: 20px;
   }
