@@ -1280,8 +1280,8 @@ body {
         line-height: 44px;
         color: #FFFFFF;
         width: 580px;
-        max-width: 40%;
-        padding-top: 170px;
+        max-width: 50%;
+        padding-top: 150px;
     }
     .bold {
         font-weight: bold;
@@ -1412,6 +1412,103 @@ body {
             text-transform: uppercase;
             color: #FFFFFF;
             box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+.result {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 24.17%;
+        top: -2.27%;
+        width: 50%;
+        height: 100%;
+        background: url(./../images/banner-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 2;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 25.28%;
+        top: 0%;
+        height: 100%;
+        width: 47%;
+        background: url(./../images/result-bg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+    }
+    .section-content {
+        padding-left: 70px;
+        padding-right: 70px;
+        position: relative;
+        z-index: 50;
+    }
+    .result-header {
+        font-family: $fontPage;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 78px;
+        color: #000000;
+        padding-bottom: 70px;
+    }
+    .flex-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .text-col {
+            width: 65%;
+            padding-right: 30px;
+            .text-block {
+                font-family: $fontPage;
+                font-size: 48px;
+                line-height: 59px;
+                color: #000000;
+            }
+            .bold {
+                font-weight: bold;
+            }
+            .blue {
+                font-weight: 700;
+                color: $blue;
+                white-space: nowrap;
+            }
+            .btn-wrap {
+                padding-top: 100px;
+                .btn-lightblue {
+                    display: block;
+                    outline: none;
+                    text-decoration: none;
+                    cursor: pointer;
+                    background: #C1ECFF;
+                    border-radius: 20px;
+                    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+                    padding: 30px 50px;
+                    width: 530px;
+                    max-width: 100%;
+                    font-family: $fontPage;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 34px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #05A3B3;
+                }
+            }
+        }
+        .img-col {
+            width: 45%;
+            img {
+                width: 100%;
+            }
         }
     }
 }
@@ -2009,6 +2106,24 @@ body {
             }
         }
     }
+    .result {
+        .result-header {
+            padding-bottom: 50px;
+            font-size: 48px;
+            line-height: 58px;
+        }
+        .flex-row {
+            .text-col {
+                .text-block {
+                    font-size: 38px;
+                    line-height: 44px;
+                }
+                .btn-wrap {
+                    padding-top: 50px;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 1100px) {
     .whatSreda {
@@ -2037,6 +2152,7 @@ body {
             }
         }
     }
+
 }
 @media screen and (max-width: 1024px) {
     .banner {
@@ -2483,6 +2599,36 @@ body {
                 font-size: 18px;
                 line-height: 24px;
                 padding: 20px 30px;
+            }
+        }
+    }
+    .result {
+        padding-bottom: 30px;
+        .section-content {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .result-header {
+            padding-bottom: 30px;
+            font-size: 38px;
+            line-height: 48px;
+        }
+        .flex-row {
+            .text-col {
+                padding-right: 20px;
+                .text-block {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .btn-wrap {
+                    padding-top: 40px;
+                    max-width: 90%;
+                    .btn-lightblue {
+                        padding: 20px 30px;
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+                }
             }
         }
     }
@@ -3130,6 +3276,34 @@ body {
             }
         }
     }
+    .result {
+        .section-content {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .result-header {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        .flex-row {
+            .text-col {
+                padding-right: 15px;
+                .text-block {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                .btn-wrap {
+                    padding-top: 20px;
+                    max-width: 90%;
+                    .btn-lightblue {
+                        padding: 15px 20px;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 600px) {
     .banner {
@@ -3452,6 +3626,27 @@ body {
             }
         }
     }
+    .result {
+        .result-header {
+            padding-bottom: 20px;
+            font-size: 24px;
+            line-height: 28px;
+        }
+        .flex-row {
+            .text-col {
+                .text-block {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                .btn-wrap {
+                    .btn-lightblue {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 450px) {
     .whatSreda {
@@ -3600,6 +3795,28 @@ body {
             line-height: 24px;
         }
     }
+    .result {
+        .result-header {
+            font-size: 18px;
+            line-height: 24px;
+            padding-bottom: 10px;
+        }
+        .flex-row {
+            .text-col {
+                .text-block {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                .btn-wrap {
+                    .btn-lightblue {
+                        font-size: 12px;
+                        line-height: 16px;
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+    }
     .steps .steps-content,
     .involved,
     .slider .btns-cont,
@@ -3609,7 +3826,8 @@ body {
     .banner .banner-content,
     .unique .unique-content,
     .case .case-content,
-    .how-it-was .section-content {
+    .how-it-was .section-content,
+    .result .section-content {
         padding-left: 20px;
         padding-right: 20px;
     }
