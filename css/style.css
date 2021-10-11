@@ -2037,6 +2037,107 @@ body {
   color: #05A3B3;
 }
 
+.activate {
+  background: #403F3F;
+  padding-top: 200px;
+  display: block;
+  position: relative;
+}
+
+.activate .section-content {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.activate .flex-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: flex-end;
+      -ms-flex-line-pack: end;
+          align-content: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activate .flex-row .hand-col {
+  width: 440px;
+  min-width: 440px;
+  position: relative;
+}
+
+.activate .flex-row .hand-col::before {
+  content: "";
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -120px;
+  left: 25px;
+  background: url(./../images/activete-switch.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  z-index: 1;
+}
+
+.activate .flex-row .hand-col img {
+  width: 100%;
+  position: relative;
+  z-index: 50;
+  margin-bottom: -2px;
+}
+
+.activate .flex-row .text-col {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  max-width: 820px;
+}
+
+.activate .flex-row .text-col p {
+  padding-bottom: 35px;
+}
+
+.activate .flex-row .text-col .blue {
+  color: #05A3B3;
+  text-transform: uppercase;
+}
+
+.activate .btn-wrap {
+  position: absolute;
+  right: 182px;
+  bottom: -50px;
+  z-index: 100;
+}
+
+.activate .btn-wrap .btn-lightblue {
+  background: #C1ECFF;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+  display: block;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 30px 50px;
+  width: 530px;
+  max-width: 100%;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #05A3B3;
+}
+
 @media screen and (max-width: 1350px) {
   .whatSreda .bg-rhomb1 {
     width: 150px;
@@ -2239,6 +2340,13 @@ body {
   .how-it-was .flex-row .item-wrap .item-header .header {
     font-size: 20px;
     line-height: 26px;
+  }
+  .activate .flex-row .text-col {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .activate .btn-wrap {
+    right: 100px;
   }
 }
 
@@ -2541,6 +2649,23 @@ body {
     font-size: 38px;
     line-height: 44px;
     padding-bottom: 50px;
+  }
+  .activate {
+    padding-top: 170px;
+  }
+  .activate .flex-row .hand-col {
+    width: 350px;
+    min-width: 350px;
+  }
+  .activate .flex-row .hand-col::before {
+    width: 280px;
+    height: 280px;
+    top: -90px;
+    left: 30px;
+  }
+  .activate .flex-row .text-col {
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -2996,6 +3121,19 @@ body {
     line-height: 24px;
     padding: 20px 30px;
   }
+  .activate .section-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .activate .btn-wrap {
+    bottom: -35px;
+  }
+  .activate .btn-wrap .btn-lightblue {
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px 30px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -3030,6 +3168,26 @@ body {
   .how-it-was .flex-row .item-wrap .item-text {
     font-size: 14px;
     line-height: 18px;
+  }
+  .activate {
+    padding-top: 150px;
+  }
+  .activate .flex-row .hand-col {
+    width: 300px;
+    min-width: 300px;
+  }
+  .activate .flex-row .hand-col::before {
+    width: 250px;
+    height: 250px;
+    top: -85px;
+    left: 20px;
+  }
+  .activate .flex-row .text-col {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .activate .btn-wrap {
+    right: 50px;
   }
 }
 
@@ -3627,6 +3785,34 @@ body {
     font-size: 16px;
     line-height: 20px;
   }
+  .activate {
+    padding-top: 100px;
+  }
+  .activate .section-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .activate .flex-row .hand-col {
+    width: 200px;
+    min-width: 200px;
+  }
+  .activate .flex-row .hand-col::before {
+    width: 180px;
+    height: 180px;
+    top: -60px;
+    left: 5px;
+  }
+  .activate .flex-row .text-col {
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+  }
+  .activate .btn-wrap .btn-lightblue {
+    max-width: 350px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -3787,6 +3973,27 @@ body {
   .how-it-was .btn-wrap::before {
     top: 0px;
   }
+  .activate {
+    padding-top: 80px;
+  }
+  .activate .flex-row .text-col {
+    padding-bottom: 30px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .activate .flex-row .text-col p {
+    padding-bottom: 20px;
+  }
+  .activate .btn-wrap {
+    max-width: 50%;
+    right: 30px;
+  }
+  .activate .btn-wrap .btn-lightblue {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 40px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -3917,6 +4124,41 @@ body {
   }
   .result .btn-wrap .btn-lightblue {
     max-width: 100%;
+  }
+  .activate {
+    padding-top: 70px;
+  }
+  .activate .section-content {
+    padding-left: 0px;
+  }
+  .activate .flex-row .hand-col {
+    width: 150px;
+    min-width: 150px;
+  }
+  .activate .flex-row .hand-col::before {
+    width: 120px;
+    height: 120px;
+    top: -42px;
+    left: 14px;
+  }
+  .activate .flex-row .text-col {
+    padding-bottom: 30px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .activate .flex-row .text-col p {
+    padding-bottom: 15px;
+  }
+  .activate .btn-wrap {
+    max-width: 100%;
+    right: 30px;
+    bottom: -20px;
+  }
+  .activate .btn-wrap .btn-lightblue {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px 30px;
+    width: 100%;
   }
 }
 
@@ -4056,6 +4298,24 @@ body {
     font-size: 18px;
     line-height: 24px;
     padding-bottom: 10px;
+  }
+  .activate .section-content {
+    padding-right: 15px;
+  }
+  .activate .flex-row .hand-col {
+    width: 120px;
+    min-width: 120px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .activate .flex-row .hand-col::before {
+    width: 100px;
+    height: 100px;
+    top: -42px;
+    left: 14px;
+  }
+  .activate .flex-row .text-col {
+    padding-left: 130px;
   }
   .steps .steps-content,
   .involved,
