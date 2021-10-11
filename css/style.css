@@ -1974,10 +1974,10 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -1994,6 +1994,7 @@ body {
   font-size: 48px;
   line-height: 59px;
   color: #000000;
+  padding-bottom: 100px;
 }
 
 .result .flex-row .text-col .bold {
@@ -2006,11 +2007,15 @@ body {
   white-space: nowrap;
 }
 
-.result .flex-row .text-col .btn-wrap {
-  padding-top: 100px;
+.result .flex-row .img-col {
+  width: 45%;
 }
 
-.result .flex-row .text-col .btn-wrap .btn-lightblue {
+.result .flex-row .img-col img {
+  width: 100%;
+}
+
+.result .btn-wrap .btn-lightblue {
   display: block;
   outline: none;
   text-decoration: none;
@@ -2030,14 +2035,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #05A3B3;
-}
-
-.result .flex-row .img-col {
-  width: 45%;
-}
-
-.result .flex-row .img-col img {
-  width: 100%;
 }
 
 @media screen and (max-width: 1350px) {
@@ -2534,12 +2531,16 @@ body {
     font-size: 48px;
     line-height: 58px;
   }
+  .result .flex-row {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .result .flex-row .text-col .text-block {
     font-size: 38px;
     line-height: 44px;
-  }
-  .result .flex-row .text-col .btn-wrap {
-    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -2984,15 +2985,16 @@ body {
   .result .flex-row .text-col .text-block {
     font-size: 24px;
     line-height: 32px;
+    padding-bottom: 40px;
   }
-  .result .flex-row .text-col .btn-wrap {
-    padding-top: 40px;
-    max-width: 90%;
+  .result .btn-wrap {
+    max-width: 100%;
   }
-  .result .flex-row .text-col .btn-wrap .btn-lightblue {
+  .result .btn-wrap .btn-lightblue {
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 24px;
     padding: 20px 30px;
-    font-size: 24px;
-    line-height: 28px;
   }
 }
 
@@ -3615,15 +3617,15 @@ body {
   .result .flex-row .text-col .text-block {
     font-size: 18px;
     line-height: 24px;
+    padding-bottom: 0px;
   }
-  .result .flex-row .text-col .btn-wrap {
+  .result .btn-wrap {
     padding-top: 20px;
-    max-width: 90%;
   }
-  .result .flex-row .text-col .btn-wrap .btn-lightblue {
-    padding: 15px 20px;
-    font-size: 18px;
-    line-height: 24px;
+  .result .btn-wrap .btn-lightblue {
+    max-width: 350px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -3910,9 +3912,11 @@ body {
     font-size: 14px;
     line-height: 18px;
   }
-  .result .flex-row .text-col .btn-wrap .btn-lightblue {
-    font-size: 14px;
-    line-height: 16px;
+  .result .btn-wrap {
+    padding-top: 30px;
+  }
+  .result .btn-wrap .btn-lightblue {
+    max-width: 100%;
   }
 }
 
@@ -4036,19 +4040,22 @@ body {
     font-size: 18px;
     line-height: 24px;
   }
+  .result::before {
+    width: 80%;
+    left: 10%;
+    top: -10%;
+    background-position: top;
+  }
+  .result::after {
+    width: 80%;
+    left: 10%;
+    top: -10%;
+    background-position: top;
+  }
   .result .result-header {
     font-size: 18px;
     line-height: 24px;
     padding-bottom: 10px;
-  }
-  .result .flex-row .text-col .text-block {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .result .flex-row .text-col .btn-wrap .btn-lightblue {
-    font-size: 12px;
-    line-height: 16px;
-    padding: 10px 15px;
   }
   .steps .steps-content,
   .involved,
@@ -4063,6 +4070,20 @@ body {
   .result .section-content {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .result .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .result .flex-row .text-col {
+    width: 100%;
+    padding-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
