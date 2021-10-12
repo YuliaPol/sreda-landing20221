@@ -1814,6 +1814,75 @@ body {
         }
     }
 }
+.questions {
+    background: #403F3F;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    .section-content {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .questions-header {
+        font-family: $fontPage;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 78px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .questions-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .pic-col {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+        .text-col {
+            width: 50%;
+            padding-left: 35px;
+            .text-block {
+                font-family: $fontPage;
+                font-size: 28px;
+                line-height: 34px;
+                color: #FFFFFF;
+                padding-bottom: 80px;
+                .bold {
+                    font-weight: bold;
+                }
+            }
+            .btn-wrap {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .btn-lightblue {
+                    display: block;
+                    outline: none;
+                    text-decoration: none;
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 530px;
+                    background: #C1ECFF;
+                    border-radius: 20px;
+                    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+                    padding: 17px 30px;
+                    font-family: $fontPage;
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 34px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #05A3B3;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 1350px) {
     .whatSreda {
         .bg-rhomb1 {
@@ -2536,6 +2605,28 @@ body {
             }
         }
     }
+    .questions {
+        padding-bottom: 60px;
+        .questions-header {
+            font-size: 48px;
+            line-height: 58px;
+        }
+        .questions-row {
+            .text-col {
+                .text-block {
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding-bottom: 60px;
+                }
+                .btn-wrap {
+                    .btn-lightblue {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 1100px) {
     .whatSreda {
@@ -3133,6 +3224,33 @@ body {
             .percent-item-4 {
                 .text {
                     max-width: 350px;
+                }
+            }
+        }
+    }
+    .questions {
+        padding-bottom: 40px;
+        .questions-header {
+            font-size: 38px;
+            line-height: 48px;
+        }
+        .section-content {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .questions-row {
+            .text-col {
+                .text-block {
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding-bottom: 40px;
+                }
+                .btn-wrap {
+                    .btn-lightblue {
+                        font-size: 18px;
+                        line-height: 24px;
+                        padding: 15px 30px;
+                    }
                 }
             }
         }
@@ -3971,6 +4089,34 @@ body {
             }
         }
     }
+    .questions {
+        padding-bottom: 40px;
+        padding-top: 40px;
+        .questions-header {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        .section-content {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .questions-row {
+            .text-col {
+                .text-block {
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding-bottom: 30px;
+                }
+                .btn-wrap {
+                    .btn-lightblue {
+                        font-size: 12px;
+                        line-height: 16px;
+                        padding: 12px 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 600px) {
     .banner {
@@ -4234,6 +4380,39 @@ body {
             right: 0px;
         }
     }
+    .questions {
+        .questions-header {
+            padding-bottom: 30px;
+        }
+        .questions-row {
+            flex-wrap: wrap;
+            .pic-col {
+                width: 100%;
+                text-align: center;
+                padding-bottom: 30px;
+                img {
+                    max-width: 350px;
+                }
+            }
+            .text-col {
+                width: 100%;
+                padding-left: 0px;
+                .text-block {
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding-bottom: 30px;
+                }
+                .btn-wrap {
+                    .btn-lightblue {
+                        font-size: 14px;
+                        line-height: 18px;
+                        padding: 15px 60px;
+                        max-width: 400px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 500px) {
     .banner {
@@ -4436,6 +4615,12 @@ body {
     }
     .percent {
         .percent-header {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .questions {
+        .questions-header {
             font-size: 24px;
             line-height: 28px;
         }
@@ -4658,7 +4843,8 @@ body {
     .how-it-was .section-content,
     .result .section-content,
     .six-months .section-content,
-    .percent .section-content {
+    .percent .section-content,
+    .questions .section-content {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -4670,6 +4856,17 @@ body {
             .text-col {
                 width: 100%;
                 padding-top: 20px;
+            }
+        }
+    }
+    .questions {
+        .questions-row {
+            .text-col {
+                .btn-wrap {
+                    .btn-lightblue {
+                        padding: 15px 30px;
+                    }
+                }
             }
         }
     }
