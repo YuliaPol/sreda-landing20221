@@ -2542,6 +2542,126 @@ body {
   color: #05A3B3;
 }
 
+.load-wrapper {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #ffffff;
+  z-index: 10000;
+}
+
+.load-wrapper .load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+
+.load-wrapper .load hr {
+  border: 0;
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-animation: spin 2s ease infinite;
+       -o-animation: spin 2s ease infinite;
+          animation: spin 2s ease infinite;
+}
+
+.load-wrapper .load :first-child {
+  background: #05A3B3;
+  -webkit-animation-delay: -1.5s;
+       -o-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+
+.load-wrapper .load :nth-child(2) {
+  background: #61C3D9;
+  -webkit-animation-delay: -1s;
+       -o-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.load-wrapper .load :nth-child(3) {
+  background: #05A3B3;
+  -webkit-animation-delay: -0.5s;
+       -o-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+.load-wrapper .load :last-child {
+  background: #61C3D9;
+}
+
+@-webkit-keyframes spin {
+  0%, 100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(160%);
+            transform: translate(160%);
+  }
+  50% {
+    -webkit-transform: translate(160%, 160%);
+            transform: translate(160%, 160%);
+  }
+  75% {
+    -webkit-transform: translate(0, 160%);
+            transform: translate(0, 160%);
+  }
+}
+
+@-o-keyframes spin {
+  0%, 100% {
+    -o-transform: translate(0);
+       transform: translate(0);
+  }
+  25% {
+    -o-transform: translate(160%);
+       transform: translate(160%);
+  }
+  50% {
+    -o-transform: translate(160%, 160%);
+       transform: translate(160%, 160%);
+  }
+  75% {
+    -o-transform: translate(0, 160%);
+       transform: translate(0, 160%);
+  }
+}
+
+@keyframes spin {
+  0%, 100% {
+    -webkit-transform: translate(0);
+         -o-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(160%);
+         -o-transform: translate(160%);
+            transform: translate(160%);
+  }
+  50% {
+    -webkit-transform: translate(160%, 160%);
+         -o-transform: translate(160%, 160%);
+            transform: translate(160%, 160%);
+  }
+  75% {
+    -webkit-transform: translate(0, 160%);
+         -o-transform: translate(0, 160%);
+            transform: translate(0, 160%);
+  }
+}
+
 @media screen and (max-width: 1350px) {
   .whatSreda .bg-rhomb1 {
     width: 150px;
