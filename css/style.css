@@ -2303,6 +2303,146 @@ body {
   width: 100%;
 }
 
+.percent {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.percent::before {
+  content: "";
+  position: absolute;
+  left: -0.07%;
+  right: 22.36%;
+  top: -18.53%;
+  bottom: -30.67%;
+  background: -webkit-radial-gradient(42.19% 42.19% at 50.01% 50.01%, #9BFFEB 0%, rgba(193, 236, 255, 0.79) 47.71%, rgba(255, 255, 255, 0) 100%);
+  background: -o-radial-gradient(42.19% 42.19% at 50.01% 50.01%, #9BFFEB 0%, rgba(193, 236, 255, 0.79) 47.71%, rgba(255, 255, 255, 0) 100%);
+  background: radial-gradient(42.19% 42.19% at 50.01% 50.01%, #9BFFEB 0%, rgba(193, 236, 255, 0.79) 47.71%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+  width: 1120px;
+  height: 1120px;
+}
+
+.percent .section-content {
+  padding-left: 70px;
+  padding-right: 70px;
+  position: relative;
+  z-index: 50;
+}
+
+.percent .percent-header {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 78px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.percent .percent-content .percent-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.percent .percent-content .percent-row .under-header-text {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #05A3B3;
+  width: 35%;
+}
+
+.percent .percent-content .percent-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.percent .percent-content .percent-item .number {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 117px;
+  text-transform: uppercase;
+  color: rgba(5, 163, 179, 0.28);
+  -webkit-text-stroke: 4px #05A3B3;
+  padding-right: 20px;
+}
+
+.percent .percent-content .percent-item .text {
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.percent .percent-content .percent-item .text .bold {
+  font-weight: bold;
+}
+
+.percent .percent-content .percent-item-1 {
+  width: 60%;
+  padding-bottom: 10px;
+}
+
+.percent .percent-content .percent-item-2 {
+  padding-left: 10%;
+  padding-bottom: 10px;
+}
+
+.percent .percent-content .percent-item-2 .text {
+  max-width: 567px;
+}
+
+.percent .percent-content .percent-item-3 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 10px;
+}
+
+.percent .percent-content .percent-item-3 .text {
+  max-width: 410px;
+}
+
+.percent .percent-content .percent-item-4 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+}
+
+.percent .percent-content .percent-item-4 .text {
+  max-width: 410px;
+}
+
 @media screen and (max-width: 1350px) {
   .whatSreda .bg-rhomb1 {
     width: 150px;
@@ -2856,6 +2996,35 @@ body {
   .six-months .six-months-list .block-wrap .block-item .img {
     width: 35%;
   }
+  .percent::before {
+    width: 900px;
+    height: 900px;
+  }
+  .percent .percent-header {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .percent .percent-content .percent-row .under-header-text {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .percent .percent-content .percent-item .number {
+    font-size: 80px;
+    line-height: 90px;
+  }
+  .percent .percent-content .percent-item .text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .percent .percent-content .percent-item-2 .text {
+    max-width: 500px;
+  }
+  .percent .percent-content .percent-item-3 .text {
+    max-width: 380px;
+  }
+  .percent .percent-content .percent-item-4 .text {
+    max-width: 380px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -3350,6 +3519,39 @@ body {
   .six-months .six-months-list .block-wrap .block-item .img {
     width: 30%;
   }
+  .percent::before {
+    width: 700px;
+    height: 700px;
+  }
+  .percent .percent-header {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .percent .section-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .percent .percent-content .percent-row .under-header-text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .percent .percent-content .percent-item .number {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .percent .percent-content .percent-item .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .percent .percent-content .percent-item-2 .text {
+    max-width: 440px;
+  }
+  .percent .percent-content .percent-item-3 .text {
+    max-width: 350px;
+  }
+  .percent .percent-content .percent-item-4 .text {
+    max-width: 350px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -3404,6 +3606,14 @@ body {
   }
   .activate .btn-wrap {
     right: 50px;
+  }
+  .percent .percent-content .percent-item .number {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .percent .percent-content .percent-item .text {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -4056,6 +4266,64 @@ body {
   .six-months .six-months-list .block-wrap .block-item .img {
     width: 30%;
   }
+  .percent::before {
+    width: 500px;
+    height: 500px;
+  }
+  .percent .percent-header {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .percent .section-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .percent .percent-content .percent-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .percent .percent-content .percent-row .under-header-text {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .percent .percent-content .percent-row .under-header-text br {
+    display: none;
+  }
+  .percent .percent-content .percent-item .number {
+    font-size: 60px;
+    line-height: 70px;
+    -webkit-text-stroke: 3px #05A3B3;
+    padding-right: 15px;
+    min-width: 140px;
+  }
+  .percent .percent-content .percent-item .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .percent .percent-content .percent-item-1 {
+    width: auto;
+  }
+  .percent .percent-content .percent-item-1 .text {
+    max-width: 300px;
+  }
+  .percent .percent-content .percent-item-2 .text {
+    max-width: 400px;
+  }
+  .percent .percent-content .percent-item-3 .text {
+    max-width: 300px;
+  }
+  .percent .percent-content .percent-item-4 .text {
+    max-width: 300px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -4248,6 +4516,47 @@ body {
   .six-months .six-months-list .block-wrap .block-item .img {
     max-width: 80px;
   }
+  .percent .percent-content .percent-row {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .percent .percent-content .percent-item-1 .text {
+    max-width: none;
+  }
+  .percent .percent-content .percent-item-2 {
+    padding-left: 0px;
+  }
+  .percent .percent-content .percent-item-2 .text {
+    max-width: none;
+  }
+  .percent .percent-content .percent-item-3 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .percent .percent-content .percent-item-3 .text {
+    max-width: none;
+  }
+  .percent .percent-content .percent-item-4 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .percent .percent-content .percent-item-4 .text {
+    max-width: none;
+  }
+  .percent::before {
+    width: 500px;
+    height: 500px;
+    top: 10%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -4421,6 +4730,10 @@ body {
     font-size: 24px;
     line-height: 28px;
   }
+  .percent .percent-header {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -4578,6 +4891,17 @@ body {
   .activate .flex-row .text-col {
     padding-left: 130px;
   }
+  .percent .percent-header {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .percent .percent-content .percent-item .number {
+    font-size: 40px;
+    line-height: 60px;
+    -webkit-text-stroke: 2px #05A3B3;
+    padding-right: 10px;
+    min-width: 95px;
+  }
   .steps .steps-content,
   .involved,
   .slider .btns-cont,
@@ -4589,7 +4913,8 @@ body {
   .case .case-content,
   .how-it-was .section-content,
   .result .section-content,
-  .six-months .section-content {
+  .six-months .section-content,
+  .percent .section-content {
     padding-left: 20px;
     padding-right: 20px;
   }
