@@ -32,9 +32,9 @@ jQuery(function ($) {
                 }
             },
         });
-        // preloader
-        window.onload = function () {
-            $('.load-wrapper').fadeOut();
-        }
     });
 });
+// preloader
+window.onload = function () {
+    $('.load-wrapper').fadeOut();
+}
