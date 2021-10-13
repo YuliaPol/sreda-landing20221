@@ -1939,6 +1939,242 @@ body {
         }
     }
 }
+.form-container {
+    width: 100%;
+    min-height: 100vh;
+    background: #403F3F;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        right: -100px;
+        width: 380px;
+        height: 306px;
+        background: url(./../images/form-bg.svg);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 800px;
+        left: -100px;
+        width: 380px;
+        height: 306px;
+        background: url(./../images/form-bg.svg);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+    }
+    .form-wrapper {
+        max-width: 780px;
+        background: #ffffff;
+        padding-top: 30px;
+        padding-bottom: 35px;
+        padding-left: 100px;
+        padding-right: 100px;
+        position: relative;
+        z-index: 50;
+    }
+    .form-header {
+        font-family: $fontPage;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        padding-bottom: 16px;
+    }
+    .thanks-header {
+        font-family: $fontPage;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 78px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        padding-bottom: 16px;
+    }
+    .under-header {
+        font-family: $fontPage;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #61C3D9;
+    }
+    .back-wrapper {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        .btn-back {
+            display: block;
+            width: 100%;
+            outline: none;
+            text-decoration: none;
+            border: none;
+            background: #05A3B3;
+            border-radius: 20px;
+            padding: 30px;
+            font-family: $fontPage;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 34px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+    .form-group {
+        padding-bottom: 6px;
+        position: relative;
+        &.has-error {
+            input[type=text],
+            input[type=email],
+            input[type=tel] {
+                box-shadow: inset 10px 4px 26px rgba(0, 0, 0, 0.14), 0px 0px 10px 2px rgba(255, 0, 0, 0.5);
+                border-color: red;
+            }
+            .error-text {
+                max-height: 80px;
+                padding: 10px 20px;
+                opacity: 1;
+            }
+        }
+        .error-text {
+            color: red;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-height: 0px;
+            overflow: hidden;
+            opacity: 0;
+            transition: all 0.3s ease-in;
+        }
+        input[type=text],
+        input[type=email],
+        input[type=tel] {
+            padding: 20px;
+            background: #FFFFFF;
+            box-shadow: inset 10px 4px 26px rgba(0, 0, 0, 0.14);
+            border-radius: 20px;
+            border: 1px solid transparent;
+            font-family: $fontPage;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            color: #000000;
+            outline: none;
+            width: 100%;
+            transition: border-color 0.3s ease-in;
+            &::placeholder {
+                font-family: $fontPage;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #000000;   
+            }
+            &:focus {
+                border-color: $blue;
+            }
+        }
+    }
+    .question {
+        font-family: $fontPage;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #000000;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .answers-list {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        .asnwer-item {
+            width: calc(50% - 9px);
+            input[type=radio] {
+                display: none;
+                &:checked {
+                    & ~ label {
+                        background-position: top;
+                        color: #ffffff;
+                    }
+                }
+            }
+            label {
+                width: 100%;
+                display: block;
+                background: linear-gradient(180deg,#4C6BFD 0%, #4C6BFD 35%,  #76D4FE 67%, #C1ECFF 100%);
+                background-position: bottom;
+                background-repeat: no-repeat;
+                background-size: 100% 300%;
+                box-shadow: 1px 13px 34px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+                padding: 20px;
+                font-family: $fontPage;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: uppercase;
+                color: #4C6BFD;
+                margin-bottom: 15px;
+                text-align: center;
+                cursor: pointer;
+                transition: background 0.3s ease-in;
+            }
+        }
+    }
+    .form-text {
+        padding-top: 20px;
+        padding-bottom: 35px;
+        font-family: $fontPage;
+        font-size: 9px;
+        line-height: 11px;
+        text-align: center;
+        color: #000000;
+        .bold {
+            font-weight: bold;
+        }
+    }
+    .btn-wrap {
+        .btn-submit {
+            display: block;
+            width: 100%;
+            outline: none;
+            text-decoration: none;
+            border: none;
+            background: #05A3B3;
+            border-radius: 20px;
+            padding: 30px;
+            font-family: $fontPage;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 34px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+}
+
 @media screen and (max-width: 1350px) {
     .whatSreda {
         .bg-rhomb1 {
@@ -3311,6 +3547,48 @@ body {
             }
         }
     }
+    .form-container {
+        &::before {
+            top: 30px;
+            right: -80px;
+            width: 280px;
+            height: 286px;
+        }
+        &::after {
+            left: -80px;
+            width: 280px;
+            height: 286px;
+        }
+        .form-header {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        .thanks-header {
+            font-size: 38px;
+            line-height: 48px;
+        }
+        .under-header {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .question {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .form-wrapper {
+            max-width: 600px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .answers-list {
+            .asnwer-item {
+                width: calc(50% - 5px);
+                label {
+                    padding: 15px;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 900px) {
     .steps {
@@ -4173,6 +4451,78 @@ body {
             }
         }
     }
+    .form-container {
+        &::before {
+            top: 30px;
+            right: -50px;
+            width: 180px;
+            height: 186px;
+        }
+        &::after {
+            left: -50px;
+            width: 180px;
+            height: 186px;
+        }
+        .form-header {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .thanks-header {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        .under-header {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .back-wrapper {
+            .btn-back {
+                font-size: 18px;
+                line-height: 32px;
+                padding: 20px;
+            }
+        }
+        .question {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .form-wrapper {
+            max-width: 500px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .answers-list {
+            .asnwer-item {
+                label {
+                    padding: 15px 10px;
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+            }
+        }
+        .form-text {
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+        .btn-wrap {
+            .btn-submit {
+                font-size: 18px;
+                line-height: 32px;
+                padding: 20px;
+            }
+        }
+        .form-group {
+            input[type=text],
+            input[type=email],
+            input[type=tel] {
+                padding: 15px;
+            }
+        }
+        .customselect-wrapper .select-styled {
+            padding: 15px;
+            padding-right: 40px;
+        }
+    }
 }
 @media screen and (max-width: 600px) {
     .banner {
@@ -4469,6 +4819,34 @@ body {
             }
         }
     }
+    .form-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        .form-wrapper {
+            max-width: 400px;
+        }
+        .answers-list {
+            flex-wrap: wrap;
+            .asnwer-item {
+                width: 100%;
+            }
+        }
+        .thanks-header {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .under-header {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .back-wrapper {
+            .btn-back {
+                font-size: 14px;
+                line-height: 24px;
+                padding: 20px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 500px) {
     .banner {
@@ -4679,6 +5057,22 @@ body {
         .questions-header {
             font-size: 24px;
             line-height: 28px;
+        }
+    }
+    .form-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        .form-wrapper {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .form-header {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .question {
+            font-size: 16px;
+            line-height: 20px;
         }
     }
 }
