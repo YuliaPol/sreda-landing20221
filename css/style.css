@@ -3028,6 +3028,12 @@ body {
   font-weight: bold;
 }
 
+.form-container .form-text a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
 .form-container .btn-wrap .btn-submit {
   display: block;
   width: 100%;
