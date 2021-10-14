@@ -449,6 +449,12 @@ body {
   margin-left: 10px;
 }
 
+.btn-blue:hover {
+  -webkit-animation: hoverShine 200ms;
+       -o-animation: hoverShine 200ms;
+          animation: hoverShine 200ms;
+}
+
 .twoBlocks {
   padding: 80px 60px;
   background: -webkit-gradient(linear, left top, left bottom, from(#05A3B3), to(#00C3DA));
@@ -1371,6 +1377,12 @@ body {
   display: block;
 }
 
+.involved .bottom-row .btn-col .btn-navy:hover {
+  -webkit-animation: hoverShine 200ms;
+       -o-animation: hoverShine 200ms;
+          animation: hoverShine 200ms;
+}
+
 .unique {
   position: relative;
   padding-bottom: 60px;
@@ -1619,6 +1631,12 @@ body {
   text-decoration: none;
   cursor: pointer;
   display: block;
+}
+
+.unique .bottom-row .btn-col .btn-navy:hover {
+  -webkit-animation: hoverShine 200ms;
+       -o-animation: hoverShine 200ms;
+          animation: hoverShine 200ms;
 }
 
 .case {
@@ -1917,6 +1935,12 @@ body {
           box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
 }
 
+.how-it-was .btn-wrap .btn-blue:hover {
+  -webkit-animation: hoverShine 200ms;
+       -o-animation: hoverShine 200ms;
+          animation: hoverShine 200ms;
+}
+
 .result {
   padding-top: 20px;
   padding-bottom: 50px;
@@ -2037,6 +2061,12 @@ body {
   color: #05A3B3;
 }
 
+.result .btn-wrap .btn-lightblue:hover {
+  -webkit-animation: hoverShine 200ms;
+       -o-animation: hoverShine 200ms;
+          animation: hoverShine 200ms;
+}
+
 .activate {
   background: #403F3F;
   padding-top: 200px;
@@ -2136,6 +2166,12 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #05A3B3;
+}
+
+.activate .btn-wrap .btn-lightblue:hover {
+  -webkit-animation: hoverShine 200ms;
+       -o-animation: hoverShine 200ms;
+          animation: hoverShine 200ms;
 }
 
 .six-months {
@@ -2542,6 +2578,12 @@ body {
   color: #05A3B3;
 }
 
+.questions .questions-row .text-col .btn-wrap .btn-lightblue:hover {
+  -webkit-animation: hoverShine 200ms;
+       -o-animation: hoverShine 200ms;
+          animation: hoverShine 200ms;
+}
+
 .load-wrapper {
   position: fixed;
   top: 0px;
@@ -2780,6 +2822,12 @@ body {
   cursor: pointer;
 }
 
+.form-container .back-wrapper .btn-back:hover {
+  -webkit-animation: hoverShine 200ms;
+       -o-animation: hoverShine 200ms;
+          animation: hoverShine 200ms;
+}
+
 .form-container .form-group {
   padding-bottom: 6px;
   position: relative;
@@ -2997,6 +3045,69 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+  -webkit-box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+}
+
+.form-container .btn-wrap .btn-submit:hover {
+  -webkit-animation: hoverShine 200ms;
+       -o-animation: hoverShine 200ms;
+          animation: hoverShine 200ms;
+}
+
+.form-container .hidden {
+  display: none;
+}
+
+.form-container .show-promocode {
+  cursor: pointer;
+}
+
+/* Declare shine on hover animation */
+@-webkit-keyframes hoverShine {
+  0% {
+    background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  50% {
+    background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  100% {
+    background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 100%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 100%);
+  }
+}
+@-o-keyframes hoverShine {
+  0% {
+    background-image: -o-linear-gradient(315deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  50% {
+    background-image: -o-linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  100% {
+    background-image: -o-linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 100%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 100%);
+  }
+}
+@keyframes hoverShine {
+  0% {
+    background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-linear-gradient(315deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  50% {
+    background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  100% {
+    background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 100%);
+    background-image: -o-linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 100%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 100%);
+  }
 }
 
 @media screen and (max-width: 1350px) {

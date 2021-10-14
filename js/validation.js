@@ -1,5 +1,26 @@
 jQuery(function ($) {
     $(document).ready(function () {
+
+        $('.show-hidden').on('change', 'input', function(e){
+            let inputs = $(this).parents('.show-hidden').find('input');
+            for (let i = 0; i < inputs.length; i++) {
+                if($(inputs[i]).attr('data-hidden')){
+                    if($(inputs[i]).is(':checked')){
+                        $($(inputs[i]).attr('data-hidden')).fadeIn(300);   
+                    }
+                    else {
+                        if($(this).attr('data-hidden') !== $(inputs[i]).attr('data-hidden')){
+                            $($(inputs[i]).attr('data-hidden')).fadeOut(300);   
+                        }
+                    }
+                }
+            }
+        });
+
+        $('.show-promocode').click(function(e){
+            $(this).parents('.form-group').fadeOut(0);
+            $('.promocode-group').fadeIn(300);
+        });
          //validation
         var formValid = document.getElementsByClassName('form-valid')[0];
         $('.valid-form-send').click(function () {
