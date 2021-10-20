@@ -55,7 +55,20 @@ jQuery(function ($) {
             }
             return rateMonth;
         }
-
-       
+        $.getJSON('http://www.geoplugin.net/json.gp', function(data) {
+            let countryCode = data.geoplugin_countryCode;
+            if(countryCode === 'UA') {
+                $('.calc-block').find('.currency-wrap').find('li[rel=UAN]').click();
+            }
+            if(countryCode === 'RU') {
+                $('.calc-block').find('.currency-wrap').find('li[rel=RUB]').click();
+            }
+            if(countryCode === 'BY') {
+                $('.calc-block').find('.currency-wrap').find('li[rel=BYN]').click();
+            }
+            if(countryCode === 'KZ') {
+                $('.calc-block').find('.currency-wrap').find('li[rel=KZT]').click();
+            }
+        });
     });
 });
