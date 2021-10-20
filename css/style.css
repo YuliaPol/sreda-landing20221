@@ -3399,7 +3399,7 @@ body {
 
 .calculator .calc-block .calc-row .blue-col {
   width: 48%;
-  padding: 15px 25px;
+  padding: 15px 15px;
   background: -webkit-gradient(linear, left top, left bottom, from(#05A3B3), to(#61C3D9));
   background: -webkit-linear-gradient(top, #05A3B3 0%, #61C3D9 100%);
   background: -o-linear-gradient(top, #05A3B3 0%, #61C3D9 100%);
@@ -3472,7 +3472,7 @@ body {
 .calculator .calc-block .calc-row .cost-row .currency-wrap .select-styled {
   background: transparent;
   padding: 8px;
-  padding-left: 35px;
+  padding-left: 25px;
   -webkit-box-shadow: none;
           box-shadow: none;
   font-weight: bold;
@@ -3490,32 +3490,18 @@ body {
   background-repeat: no-repeat;
   right: inherit;
   left: 0px;
+  width: 25px;
 }
 
 .calculator .calc-block .calc-row .cost-row .currency-wrap .select-options {
   max-height: 160px;
 }
 
-.calculator .calc-block .calc-row .cost-row .cost-col {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.calculator .calc-block .calc-row .cost-row .cost-col .price-for-month {
+.calculator .calc-block .calc-row .cost-row .price-for-month {
   font-family: "Montserrat";
   font-weight: bold;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 46px;
+  line-height: 46px;
   text-align: center;
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, from(#C1ECFF), to(rgba(193, 236, 255, 0.79)));
@@ -3527,13 +3513,13 @@ body {
   color: #C1ECFF;
 }
 
-.calculator .calc-block .calc-row .cost-row .cost-col .label {
+.calculator .calc-block .calc-row .cost-row .label {
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
-  padding-left: 15px;
+  padding-left: 5px;
   padding-top: 5px;
 }
 
@@ -4875,13 +4861,13 @@ body {
     padding: 15px;
   }
   .calculator .calc-block .calc-row .blue-col {
-    padding: 15px;
+    padding: 15px 10px;
   }
-  .calculator .calc-block .calc-row .cost-row .cost-col .price-for-month {
+  .calculator .calc-block .calc-row .cost-row .price-for-month {
     font-size: 38px;
     line-height: 38px;
   }
-  .calculator .calc-block .calc-row .cost-row .cost-col .label {
+  .calculator .calc-block .calc-row .cost-row .label {
     font-size: 16px;
     line-height: 20px;
     padding-top: 3px;
@@ -5848,21 +5834,21 @@ body {
   .calculator .calc-block .calc-row .blue-col {
     padding: 15px 10px;
   }
-  .calculator .calc-block .calc-row .cost-row .cost-col .price-for-month {
-    font-size: 36px;
-    line-height: 36px;
+  .calculator .calc-block .calc-row .cost-row .price-for-month {
+    font-size: 32px;
+    line-height: 32px;
   }
-  .calculator .calc-block .calc-row .cost-row .cost-col .label {
-    font-size: 14px;
-    line-height: 18px;
+  .calculator .calc-block .calc-row .cost-row .label {
+    font-size: 12px;
+    line-height: 16px;
   }
   .calculator .calc-block .calc-row .cost-row .currency-wrap .select-styled {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 16px;
   }
   .calculator .calc-block .calc-row .total-row .text {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 16px;
   }
   .calculator .calc-block .calc-row .total-row .total-price {
     font-size: 20px;
@@ -6162,7 +6148,6 @@ body {
   }
   .calculator {
     padding-top: 40px;
-    padding-bottom: 40px;
   }
   .calculator .section-content {
     max-width: 400px;
@@ -6418,6 +6403,9 @@ body {
     font-size: 16px;
     line-height: 20px;
   }
+  .calculator .calc-block .calc-row .white-col {
+    padding: 15px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -6633,6 +6621,9 @@ body {
   }
   .calculator .calc-group .group-wrap .bottom-text {
     bottom: -15px;
+  }
+  .calculator .calc-block .calc-row .blue-col {
+    padding: 15px 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

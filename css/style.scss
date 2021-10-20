@@ -2468,7 +2468,7 @@ body {
             }
             .blue-col {
                 width: 48%;
-                padding: 15px 25px;
+                padding: 15px 15px;
                 background: linear-gradient(180deg, #05A3B3 0%, #61C3D9 100%);
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 28.5px;
@@ -2513,7 +2513,7 @@ body {
                     .select-styled {
                         background: transparent;
                         padding: 8px;
-                        padding-left: 35px;
+                        padding-left: 25px;
                         box-shadow: none;
                         font-weight: bold;
                         font-size: 18px;
@@ -2527,37 +2527,33 @@ body {
                             background-repeat: no-repeat;
                             right: inherit;
                             left: 0px;
+                            width: 25px;
                         }
                     }
                     .select-options {
                         max-height: 160px;
                     }
                 }
-                .cost-col {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: space-between;
-                    .price-for-month {
-                        font-family: $fontPage;
-                        font-weight: bold;
-                        font-size: 48px;
-                        line-height: 48px;
-                        text-align: center;
-                        text-transform: uppercase;
-                        background: linear-gradient(180deg, #C1ECFF 0%, rgba(193, 236, 255, 0.79) 100%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        color: #C1ECFF;
-                    }
-                    .label {
-                        font-family: $fontPage;
-                        font-weight: bold;
-                        font-size: 18px;
-                        line-height: 22px;
-                        color: #FFFFFF;
-                        padding-left: 15px;
-                        padding-top: 5px;
-                    }
+                .price-for-month {
+                    font-family: $fontPage;
+                    font-weight: bold;
+                    font-size: 46px;
+                    line-height: 46px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    background: linear-gradient(180deg, #C1ECFF 0%, rgba(193, 236, 255, 0.79) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: #C1ECFF;
+                }
+                .label {
+                    font-family: $fontPage;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #FFFFFF;
+                    padding-left: 5px;
+                    padding-top: 5px;
                 }
             }
             .total-row {
@@ -4085,19 +4081,17 @@ body {
                     padding: 15px;
                 }
                 .blue-col {
-                    padding: 15px;
+                    padding: 15px 10px;
                 }
                 .cost-row {
-                    .cost-col {
-                        .price-for-month {
-                            font-size: 38px;
-                            line-height: 38px;
-                        }
-                        .label {
-                            font-size: 16px;
-                            line-height: 20px;
-                            padding-top: 3px;
-                        }
+                    .price-for-month {
+                        font-size: 38px;
+                        line-height: 38px;
+                    }
+                    .label {
+                        font-size: 16px;
+                        line-height: 20px;
+                        padding-top: 3px;
                     }
                     .currency-wrap {
                         .select-styled {
@@ -5163,27 +5157,25 @@ body {
                     padding: 15px 10px;
                 }
                 .cost-row {
-                    .cost-col {
-                        .price-for-month {
-                            font-size: 36px;
-                            line-height: 36px;
-                        }
-                        .label {
-                            font-size: 14px;
-                            line-height: 18px;
-                        }
+                    .price-for-month {
+                        font-size: 32px;
+                        line-height: 32px;
+                    }
+                    .label {
+                        font-size: 12px;
+                        line-height: 16px;
                     }
                     .currency-wrap {
                         .select-styled {
-                            font-size: 14px;
-                            line-height: 18px;
+                            font-size: 12px;
+                            line-height: 16px;
                         }
                     }
                 }
                 .total-row {
                     .text {
-                        font-size: 14px;
-                        line-height: 18px;
+                        font-size: 12px;
+                        line-height: 16px;
                     }
                     .total-price {
                         font-size: 20px;
@@ -5519,7 +5511,6 @@ body {
     }
     .calculator {
         padding-top: 40px;
-        padding-bottom: 40px;
         .section-content {
             max-width: 400px;
             padding: 30px;
@@ -5806,6 +5797,15 @@ body {
             line-height: 20px;
         }
     }
+    .calculator {
+        .calc-block {
+            .calc-row {
+                .white-col {
+                    padding: 15px;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 450px) {
     .whatSreda {
@@ -6067,6 +6067,13 @@ body {
                 }
                 .bottom-text {
                     bottom: -15px;
+                }
+            }
+        }
+        .calc-block {
+            .calc-row {
+                .blue-col {
+                    padding: 15px 10px;
                 }
             }
         }
