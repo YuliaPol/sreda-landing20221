@@ -55,8 +55,14 @@ jQuery(function ($) {
             }
             return rateMonth;
         }
-        $.getJSON('http://www.geoplugin.net/json.gp', function(data) {
-            let countryCode = data.geoplugin_countryCode;
+
+        $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+            // Convert key-value pairs to JSON
+            data = data.trim().split('\n').reduce(function(obj, pair) {
+                pair = pair.split('=');
+                return obj[pair[0]] = pair[1], obj;
+            }, {});
+            let countryCode = data.loc;
             if(countryCode === 'UA') {
                 $('.calc-block').find('.currency-wrap').find('li[rel=UAN]').click();
             }
