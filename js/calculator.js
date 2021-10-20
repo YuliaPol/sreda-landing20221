@@ -55,5 +55,7 @@ jQuery(function ($) {
             }
             return rateMonth;
         }
+
+       
     });
 });

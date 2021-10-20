@@ -2606,6 +2606,14 @@ body {
             }
         }
     }
+    .warning-text {
+        font-family: $fontPage;
+        font-size: 14px;
+        line-height: 17px;
+        color: #05A3B3;
+        padding-top: 20px;
+        text-align: center;
+    }
 }
 /* Declare shine on hover animation */
 @keyframes hoverShine {
@@ -5076,6 +5084,10 @@ body {
             line-height: 32px;
             padding-bottom: 10px;
         }
+        .warning-text {
+            font-size: 12px;
+            line-height: 16px;
+        }
         .calc-group {
             padding-bottom: 25px;
             .group-name {
@@ -5510,6 +5522,7 @@ body {
     }
     .calculator {
         padding-top: 40px;
+        padding-bottom: 40px;
         .section-content {
             max-width: 400px;
             padding: 30px;

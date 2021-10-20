@@ -3587,6 +3587,15 @@ body {
   min-width: 180px;
 }
 
+.calculator .warning-text {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 17px;
+  color: #05A3B3;
+  padding-top: 20px;
+  text-align: center;
+}
+
 /* Declare shine on hover animation */
 @-webkit-keyframes hoverShine {
   0% {
@@ -5768,6 +5777,10 @@ body {
     line-height: 32px;
     padding-bottom: 10px;
   }
+  .calculator .warning-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
   .calculator .calc-group {
     padding-bottom: 25px;
   }
@@ -6147,6 +6160,7 @@ body {
   }
   .calculator {
     padding-top: 40px;
+    padding-bottom: 40px;
   }
   .calculator .section-content {
     max-width: 400px;
