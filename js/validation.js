@@ -30,12 +30,14 @@ jQuery(function ($) {
                 var erroreArrayElemnts = [];
                 for (var i = 0; i < el.length; i++) {
                     if (el[i].value === '' || el[i].value === ' ' || el[i].value === '-') {
-                        erroreArrayElemnts.push(el[i]);
-                        $(el[i]).parents('.form-group').find('.error-text').html('Поле обязательное для заполнения');
-                        $(el[i]).parents('.form-group').addClass('has-error');
-                        $(el[i]).focus(function(e){
-                            $(this).parents('.form-group').removeClass('has-error');
-                        });
+                        if($(el[i]).parents('.form-group').is(":visible")){
+                            erroreArrayElemnts.push(el[i]);
+                            $(el[i]).parents('.form-group').find('.error-text').html('Поле обязательное для заполнения');
+                            $(el[i]).parents('.form-group').addClass('has-error');
+                            $(el[i]).focus(function(e){
+                                $(this).parents('.form-group').removeClass('has-error');
+                            });
+                        }
                     }
                 }
 
